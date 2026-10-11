@@ -1,0 +1,48 @@
+HOUSE PRICE PREDICTION USING MACHINE LEARNING 
+Organization: Maincrafts Technology 
+Task: Artificial Intelligence & Machine Learning – Task 2 
+Project: Feature Engineering, Model Optimization & Performance Comparison 
+1. Objective 
+The objective of this project is to develop a machine learning system that predicts 
+median house values using the California Housing dataset. The project demonstrates 
+data exploration, feature scaling, regression model training, performance evaluation, 
+and best-model selection. 
+2. Dataset and Technologies 
+The California Housing dataset was obtained from Scikit-learn. It includes median 
+income, house age, average rooms, population, occupancy, latitude, and longitude. 
+Technologies: Python, Jupyter Notebook, Pandas, NumPy, Matplotlib, Seaborn, Scikit
+learn, and Joblib. 
+3. Methodology 
+The dataset was loaded and explored to inspect its features, data types, missing values, 
+and statistical distributions. The input features were separated from the target variable, 
+HousePrice. 
+The dataset was divided into 80% training data and 20% testing data. StandardScaler 
+was fitted using the training features and then applied to both training and testing 
+features. 
+Three regression algorithms were trained: Linear Regression, Ridge Regression, and 
+Decision Tree Regression. Their performance was compared using Root Mean Squared 
+Error (RMSE), Mean Absolute Error (MAE), and R² score. 
+4. Model Performance and Results 
+Model 
+RMSE 
+MAE 
+R² Score 
+Linear Regression  0.7456 0.5332 0.5758 
+Ridge Regression 0.7456 0.5332 0.5758 
+Decision Tree 0.7242 0.5223 0.5997 
+The model with the lowest test RMSE was selected as the best model. 
+Selected model: Decision Tree 
+Best model RMSE: 0.7242 
+Best model MAE: 0.5223 
+Best model R² score: 0.5997 
+The actual-versus-predicted plot and residual plot were used to examine prediction 
+quality and possible model errors. 
+5. Conclusion 
+This project demonstrated an end-to-end machine learning workflow for housing price 
+prediction. Feature scaling, consistent testing, and comparing multiple algorithms 
+helped establish a data-based model-selection process. 
+The final model was chosen based on its measured test performance. Further 
+improvements could include cross-validation, hyperparameter tuning, and testing 
+additional algorithms. 
+Deliverables: Jupyter Notebook, model performance comparison table, visualizations, 
+and PDF report. 

@@ -1,0 +1,11 @@
+residuals = y_test - y_pred
+
+plt.figure(figsize=(8, 5))
+plt.scatter(y_pred, residuals)
+plt.axhline(y=0, linestyle="--")
+plt.xlabel("Predicted House Prices")
+plt.ylabel("Residuals")
+plt.title("Residual Plot")
+plt.tight_layout()
+plt.savefig("residual_plot.png")
+plt.show()

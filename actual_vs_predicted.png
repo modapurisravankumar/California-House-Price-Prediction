@@ -1,0 +1,8 @@
+plt.figure(figsize=(8, 5))
+plt.scatter(y_test, y_pred)
+plt.xlabel("Actual House Prices")
+plt.ylabel("Predicted House Prices")
+plt.title("Actual vs Predicted House Prices")
+plt.tight_layout()
+plt.savefig("actual_vs_predicted.png")
+plt.show()

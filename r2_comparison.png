@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 5))
+plt.bar(results_df["Model"], results_df["R2"])
+plt.title("R² Score Comparison")
+plt.xlabel("Model")
+plt.ylabel("R² Score")
+plt.tight_layout()
+plt.savefig("r2_comparison.png")
+plt.show()
